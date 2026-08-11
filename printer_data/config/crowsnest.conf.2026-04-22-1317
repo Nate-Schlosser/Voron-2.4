@@ -1,0 +1,16 @@
+[crowsnest]
+log_path: ~/printer_data/logs/crowsnest.log
+log_level: verbose
+delete_log: false
+no_proxy: false
+
+[cam 1]
+mode: ustreamer
+                                        # camera-streamer - Provides webrtc, mjpg and snapshots. (rpi + Raspi OS based only)
+#enable_rtsp: true                      # If camera-streamer is used, this enables also usage of an rtsp server
+#rtsp_port: 8556                         # Set different ports for each device!
+port: 8080
+device: /dev/v4l/by-id/usb-Vimicro_Corp._HBVCAM_FHD_CAMERA-video-index0
+resolution: 600x600
+#custom_flags: --camera-height=1080 --camera-width=1920 --camera-video.height=1080 --camera-snapshot.height=1080 --camera-format=YUYV
+max_fps: 15
