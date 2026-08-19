@@ -4,7 +4,6 @@ port: 7125
 klippy_uds_address: /home/nate/printer_data/comms/klippy.sock
 
 [authorization]
-enable_api_key: True
 trusted_clients:
     192.168.0.200
     192.168.0.0/24    # Your whole local network
@@ -101,3 +100,9 @@ info_tags:
 [spoolman]
 server: http://192.168.0.199:7912
 
+
+[octoprint_compat]
+
+
+[authorization]
+enable_api_key: True
